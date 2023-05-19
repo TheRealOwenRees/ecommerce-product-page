@@ -1,23 +1,25 @@
 @use '../helpers/variables';
 @use '../helpers/placeholders';
 
-.gallery-buttons {
-  position: absolute;
-  top: 50%;
-  left: 1.2rem;
-  right: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  z-index: 100;
-  img {
-    width: 14px;
-    height: 14px;
-    background-color: variables.$white;
-    padding: 1rem;
-    border-radius: 50%;
-    @media (hover: hover) {
-      cursor: pointer;
+.image-gallery {
+  .gallery-buttons {
+    position: absolute;
+    top: 50%;
+    left: 1.2rem;
+    right: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 100;
+    img {
+      width: 14px;
+      height: 14px;
+      background-color: variables.$white;
+      padding: 1rem;
+      border-radius: 50%;
+      @media (hover: hover) {
+        cursor: pointer;
+      }
     }
   }
 }
